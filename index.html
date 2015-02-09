@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChatSimulator</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta content="text/html; charset=us-ascii" http-equiv=Content-Type />
+    <meta content=no-cache http-equiv=cache-control />
+    <meta content="Generate fake facebook chat messages with this chat simulator." name=description />
+    <meta content="fake chat,facebook chat,facebook chat generate,fake facebook chat,generate facebook chat,fake message,fake facebook message,facebook simulator,chat simulator,facebook chat simulator,facebook chat generator,fake messages,facebook fake messages" name=Keywords />
+    <meta content="Hunter Paolini" name=author />
+    <meta content=noimageindex name=robots />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div id="descriptionContainer">
+      <h1>ChatSimulator</h1>
+      <div id="sidebar" class="right">
+        <span>Simulate a chat with&hellip;</span>
+        <ul id="popularUsers">
+          <li><a href="#" title="http://www.facebook.com/mark">Mark Zuckerberg</a></li>
+          <li><a href="#" title="http://www.facebook.com/barackobama">Barack Obama</a></li>
+          <li><a href="#" title="http://www.facebook.com/shakira">Shakira</a></li>
+          <li><a href="#" title="http://www.facebook.com/cristiano">Cristiano Ronaldo</a></li>
+          <li><a href="#" title="http://www.facebook.com/eminem">Eminem</a></li>
+          <li><a href="#" title="http://www.facebook.com/leomessi">Leo Messi</a></li>
+          <li><a href="#" title="http://www.facebook.com/justinbieber">Justin Bieber</a></li>
+          <li><a href="#" title="http://www.facebook.com/katyperry">Katy Perry</a></li>
+          <li><a href="#" title="http://www.facebook.com/taylorswift">Taylor Swift</a></li>
+          <li><a href="#" title="http://www.facebook.com/billgates">Bill Gates</a></li>
+        </ul>
+      </div>
+      <div class="description noborders">
+        <span>Profile URL address</span><br/>
+        <div class="fluid">
+          <input type="button" id="addSenderInfo" class="link noborders right" value="Load data"/>
+          <div style="overflow: hidden;">
+            <input type="text" id="senderId" class="long-input"  placeholder="http://www.facebook.com/example"/>
+          </div>
+        </div>
+          <p class="divider">or fill in the following fields&hellip;</p>
+          <span>Name</span><br/>
+          <input type="text" id="senderName" placeholder="Anonymous"  class="short-input"/>
+          <br/>
+          <span>Image URL address</span><br/>
+          <input type="text" id="senderImg"  class="long-input" />
+        </div>
+        <div class="description noborders">
+          <span>Message from <span id="senderNameSpan2">&hellip;</span></span>
+          <div style="width: 100%; overflow: hidden;">
+          <div style="width: 32px;margin-top:1px; float: left;">
+            <img id="profilePic" height='32' width='32' src="img/pic.jpg"/>
+          </div>
+          <div style="margin-left: 40px;">
+            <textarea  id="senderMsg" placeholder="Write a message&hellip;"></textarea><br/>
+            <input type="button" id="addSenderMsg" class="link noborders" value="Send message"/>
+            <div class="right">
+                <input type="checkbox" id="sendOnReturn" checked="true"/><label for="sendOnReturn" id="sendOnReturnLbl">Send message when pressing <b>Enter</b></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+      <div id="chatWindow" class="left">
+        <div id="titleBar">
+          <div id="titlebarButtonWrapper" class="right"><a id="addFriends" class="button"></a><a id="openCam" class="button"></a><a id="openConfig" class="button2"></a><a id="closeWindow" class="button"></a></div>
+          <div class="titlebarTextWrapper"><img id="status" src="img/pixel.gif" width="1" height="1" class="online"/><span id="senderNameSpan" >Anonymous</span></div>
+        </div>
+        <div id="conversation">
+          <hr id="conversationSpacer"/>
+        </div>
+        <div id="footerWrapper">
+          <div class="right"><a id="takePic"></a><a id="addSmiley"></a></div>
+          <div id="textArea"><textarea id="msgBox"></textarea></div>
+        </div>
+      </div>
+      <div class="description noborders right" style="overflow:hidden;width:197px;height:256px;">
+        <input type="checkbox" id="blurCheck"/><label for="blurCheck">Blur name and image</label><hr/>
+        <span>Status</span><br/>
+        <label><input type="radio" name="statusRadio" value="0"/>Offline</label><br/>
+        <label><input type="radio" name="statusRadio" value="1" checked>Online</label><br/>
+        <label><input type="radio" name="statusRadio" value="2">Mobile</label><br/>
+        <span>Date</span><br/>
+        <div class="fluid">
+          <input type="button" id="addDateStamp" class="link noborders right" value="+"/>
+          <div style="overflow: hidden;">
+            <input type="text" id="dateStamp" placeholder="32 february 00.01.02" class="long-input"/>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div style="clear: both;color:rgb(137, 143, 158);font-size: 12px;">I am not affiliated with Facebook Inc. nor do I take responsibility for any reaction caused by a simulated conversation. Have fun, experiment, or prank your friends, just be kindhearted.</div>
+    </div>
+  </body>
+</html>
+
