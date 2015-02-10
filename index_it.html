@@ -15,6 +15,14 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) return;
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.0";
+             fjs.parentNode.insertBefore(js, fjs);
+             }(document, 'script', 'facebook-jssdk'));</script>
     <div id="descriptionContainer">
       <h1>chatSimulator</h1>
       <div id="sidebar" class="right">
@@ -91,7 +99,9 @@
         </div>
       </div>
       </div>
-      <div style="clear: both;color:rgb(137, 143, 158);font-size: 12px;">I am not affiliated with Facebook Inc. nor do I take responsibility for any reaction caused by a simulated conversation. Have fun, experiment, or prank your friends, just be kindhearted.</div>
+      <div style="clear:both;color:rgb(137, 143, 158);font-size:12px;">I am not affiliated with Facebook Inc. nor do I take responsibility for any reaction caused by a simulated conversation. Have fun, experiment, or prank your friends, just be kindhearted.</div>
+      <div style="margin-top:14px;display:block;text-align:center;"><div class="fb-like" data-href="https://chatsimulator.com" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+      </div>
     </div>
   </body>
 </html>
