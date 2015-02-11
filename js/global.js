@@ -24,10 +24,10 @@ $(window).load(function () {
         $(this).addClass("blur");
       });
     } else {
-        $("#senderNameSpan").removeClass("blur");
-        $("#conversation img").each(function () {
-          $(this).removeClass("blur");
-        });
+      $("#senderNameSpan").removeClass("blur");
+      $("#conversation img").each(function () {
+        $(this).removeClass("blur");
+      });
     }
   });
   $("#senderName").keyup(function () {
